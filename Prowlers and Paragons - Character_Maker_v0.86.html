@@ -1151,8 +1151,8 @@ Connections: &lt;&lt;if $connections_done isnot true&gt;&gt;&lt;&lt;textarea &qu
     Unpowered active defence: Agility: $agility
     Unpowered passive defence: Toughness: $toughness; Willpower: $willpower
     (These are not the only options but they are good shorthands below you can write your own if you get it from a Power or some other method)
-    Powered active defence: &lt;&lt;numberbox &quot;$active_defence&quot; 0&gt;&gt;
-    Powered passive defence: &lt;&lt;numberbox &quot;$passive_defence&quot; 0&gt;&gt;
+    Powered active defence: &lt;&lt;numberbox &quot;$active_defence&quot; $active_defence&gt;&gt;
+    Powered passive defence: &lt;&lt;numberbox &quot;$passive_defence&quot; $passive_defence&gt;&gt;
 
 &lt;&lt;/do&gt;&gt;
 &#39;&#39;Perks&#39;&#39;
@@ -4762,7 +4762,7 @@ others (including ships) can travel.
             $star_gate_source
             Pros: $star_gate_pro
             Const: $star_gate_con
-&lt;&lt;/switch&gt;&gt;</tw-passagedata><tw-passagedata pid="108" name="StoryInit" tags="PnP" position="25,25" size="100,100">&lt;&lt;set $HP to 0; $agility to 0; $intellect to 0; $might to 0; $perception to 0; $toughness to 0; $willpower to 0; $academics to 0; $charm to 0; $command to 0; $covert to 0; $investigation to 0; $medicine to 0; $professional to 0; $science to 0; $streetwise to 0; $survival to 0; $technology to 0; $vehicles to 0; $brute to 1; $flaw1 to [&quot;&quot;,&quot;&quot;]; $flaw2 to [&quot;&quot;,&quot;&quot;]; $flaw3 to [&quot;&quot;,&quot;&quot;]; $perks to 0; $power_have to []; $power_have_name to []; $trait_cap to 12; $Power_level to &quot;Standard&quot;; $power_source to [&quot;Innate&quot;,&quot;Magic&quot;,&quot;Psychic&quot;,&quot;Super&quot;,&quot;Tech&quot;,&quot;Trained&quot;]; $package_cost to 0; $agility_base to 0; $intellect_base to 0; $might_base to 0; $perception_base to 0; $toughness_base to 0; $willpower_base to 0; $academics_base to 0; $charm_base to 0; $command_base  to 0; $covert_base to 0; $investigation_base to 0; $medicine_base to 0; $professional_base  to 0; $science_base  to 0; $streetwise_base  to 0; $survival_base  to 0; $technology_base  to 0; $vehicles_base  to 0; $HPM to 100&gt;&gt;
+&lt;&lt;/switch&gt;&gt;</tw-passagedata><tw-passagedata pid="108" name="StoryInit" tags="PnP" position="25,25" size="100,100">&lt;&lt;set $HP to 0; $agility to 0; $intellect to 0; $might to 0; $perception to 0; $toughness to 0; $willpower to 0; $academics to 0; $charm to 0; $command to 0; $covert to 0; $investigation to 0; $medicine to 0; $professional to 0; $science to 0; $streetwise to 0; $survival to 0; $technology to 0; $vehicles to 0; $brute to 1; $flaw1 to [&quot;&quot;,&quot;&quot;]; $flaw2 to [&quot;&quot;,&quot;&quot;]; $flaw3 to [&quot;&quot;,&quot;&quot;]; $perks to 0; $power_have to []; $power_have_name to []; $trait_cap to 12; $Power_level to &quot;Standard&quot;; $power_source to [&quot;Innate&quot;,&quot;Magic&quot;,&quot;Psychic&quot;,&quot;Super&quot;,&quot;Tech&quot;,&quot;Trained&quot;]; $package_cost to 0; $agility_base to 0; $intellect_base to 0; $might_base to 0; $perception_base to 0; $toughness_base to 0; $willpower_base to 0; $academics_base to 0; $charm_base to 0; $command_base  to 0; $covert_base to 0; $investigation_base to 0; $medicine_base to 0; $professional_base  to 0; $science_base  to 0; $streetwise_base  to 0; $survival_base  to 0; $technology_base  to 0; $vehicles_base  to 0; $HPM to 100; $passive_defence to 0; $active_defence to 0&gt;&gt;
 
 &lt;&lt;set $adaptation to {position: -1, cost_base: 12, cost: 12, rank: 1}&gt;&gt;
 &lt;&lt;set $alternate_form to {position: -1, cost_base: 4, cost: 4, rank: 1}&gt;&gt;
